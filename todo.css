@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+body
+{
+  background:linear-gradient(135deg,#ff9945, #4e085f);
+}
+.container
+{
+    min-height:100vh;
+    display: flex;
+    background-size: cover;           
+    background-position: center;       /* establish flex container */
+}
+.container > div 
+{
+    width: 100px;
+    height: 15px;
+}
+.table
+{
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 0px 300px 600px 0px;
+    border-radius: 10px;
+
+}
+ul{
+  width: 300px;
+  text-align: left;
+}
+ul li { 
+  list-style-type: none;
+  font-size: 18px;
+  padding: 15px 12px 0px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url('unchecked.png');
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li span
+{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover{
+  background: #edeef0;
+}
+ul li.checked
+{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before
+{
+  background-image: url('checked.png');
+}
+
+.header
+{
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(184, 171, 171, 0.4);
+    backdrop-filter: blur(15);
+}
+input 
+{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-weight: 14px;
+    background: transparent;
+    padding: 10px;
+    
+}
+.addBtn {
+   border: none;
+   outline:none;
+   padding: 16px 50px;
+   background: #ff5945;
+   color:#fff;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 40px;
+  }
+  
+.addBtn:hover {
+    background-color: #bbb;
+  }
+  .tabHead{
+    text-align: center;
+    background: rgba(104, 84, 84, 0.219);
+    backdrop-filter: blur(15);
+    width: 300px;
+    margin: 0px auto 0px;
+    padding: 20px 20px 20px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .table a:hover {
+    background-color: gray;
+  }
+  .inlay
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    width: 300px;
+    margin-left: 750px;
+
+  }
